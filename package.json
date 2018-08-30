@@ -1,0 +1,26 @@
+{
+  "name": "group-project-2",
+  "version": "1.0.0",
+  "description": "Project-2 Rutgers Coding Bootcamp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmainegra/group-project-2.git"
+  },
+  "author": "charlie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmainegra/group-project-2/issues"
+  },
+  "homepage": "https://github.com/cmainegra/group-project-2#readme",
+  "dependencies": {
+    "cloudinary": "^1.11.0",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "sequelize": "^4.38.0"
+  }
+}
