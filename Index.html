@@ -1,23 +1,39 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Geofitti</title>
+<!doctype html>
+<html lang="en-us">
+  <!-- Media Query Demo (check the CSS page) -->
+<head>
 
+  <meta charset="UTF-8">
+
+  <title>Project 2</title>
+  
+  
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
     <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
-    
 
-  </head>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<h1>Project 2</h1>
+</head>
+
+<body>
+  
+  <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
 <div id= "holder"></div>
-  <body>
-      <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
+  <div class="wrapper">
 
-    <div id="upload_widget_opener">
+    <section id="main-content">
+      <p>Are you an art collector? Museum director and need more art attractions? Maybe just looking to decorate
+        your apartment? View different artwork from various artists here. Download and purchase items you 
+        like. Make bids on popular work from major artists.
+      </p>
+      
+      <div id="upload_widget_opener">
       <!-- upload widget div -->
     </div>
+      
       <script type="text/javascript">  
       
       console.log("hello");  
@@ -27,6 +43,15 @@
             cropping: 'server', folder: 'user_photos' },
           function(error, result) { console.log(error, result) });
       </script>
-  
-  </body>
+      
+    </section>
+
+    <section id="sidebar">
+      <p>Sell</p>
+    </section>
+
+  </div>
+
+</body>
+
 </html>
