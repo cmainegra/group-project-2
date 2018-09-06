@@ -13,8 +13,8 @@
     line-height: 27px;
   
     /* Visual */
-    background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\CSS\Images\Multi.jpg);
-    background: url(../CSS/Images/Multi.jpg);  
+    background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\img\Multi.jpg);
+    background: url(../img/Multi.jpg);  
   }
   
   .wrapper {
@@ -25,14 +25,14 @@
     margin: 40px auto;
   }
   
-  #main-content,
-  #sidebar {
+  #Buy,
+  #Sell {
     /* Box-model */
     width: 500px;
     padding: 30px;
   }
   
-  #main-content {
+  #Buy {
     /* Positioning */
     float: left;
   
@@ -40,13 +40,25 @@
     background: #fff;
   }
   
-  #sidebar {
+  #Sell {
     /* Positioning */
     float: right;
   
     /* Visual */
     background: #eee;
   }
+
+  footer { 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    background-color:white;
+    text-align: center;
+    width:980px;
+    margin-top: 50px;
+    margin-bottom: 10px; 
+    clear: both;}
   
   @media screen and (max-width: 768px) {
     body {
@@ -59,12 +71,12 @@
       padding: 20px;
     }
   
-    #main-content,
-    #sidebar {
+    #Buy,
+    #Sell {
       width: 100%;
     }
   
-    #sidebar {
+    #Sell {
       margin-top: 40px;
     }
   }
@@ -81,12 +93,12 @@
       padding: 20px;
     }
   
-    #main-content,
-    #sidebar {
+    #Buy,
+    #Sell {
       width: 100%;
     }
   
-    #sidebar {
+    #Sell {
       margin-top: 40px;
     }
   }
@@ -103,13 +115,23 @@
       padding: 20px;
     }
   
-    #main-content,
-    #sidebar {
+    #Buy,
+    #Sell {
       width: 100%;
     }
   
-    #sidebar {
+    #Sell {
       margin-top: 40px;
     }
   }
   
+  
+
+footer { padding: 20px;
+   background-image: "Images/Abstract.jpg";
+   background-size: cover;
+    text-align: center;
+    width:980px;
+    margin-top: 50px;
+    margin-bottom: 10px; 
+    clear: both;}
