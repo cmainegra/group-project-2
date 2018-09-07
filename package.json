@@ -4,7 +4,7 @@
   "description": "Project-2 Rutgers Coding Bootcamp",
   "main": "server.js",
   "engines": {
-    "node":"8.10.0",
+    "node": "8.10.0",
     "npm": "5.6.0"
   },
   "scripts": {
@@ -26,6 +26,7 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "mysql": "^2.16.0",
+    "mysql2": "^1.6.1",
     "sequelize": "^4.38.0"
   }
 }
