@@ -1,13 +1,12 @@
 {
     "development": {
         "username": "root",
-        "password": "Sushi-500",
+        "password": "charlie",
         "database": "pictures_db",
-        "host": "127.0.0.1",
         "port": 3306,
         "dialect": "mysql"
     },
-    "production": {
+    "charlie": {
         "username": "root",
         "password": "charlie",
         "database": "pictures_db",
