@@ -18,27 +18,46 @@
 </head>
 
 <body>
+  <h1>Project2</h1>
   <div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
   
 <div class="position">
 
-<a href="Buyer.html">
+<a href="Buyer.html"></a>
   <div class="container homeCon bgimg1">
       <h2 class="h20">View & Buy</h2>
-      <p1>Are you an art collector? Museum director and need more art attractions? Maybe just looking to decorate
+      <p>Are you an art collector? Museum director and need more art attractions? Maybe just looking to decorate
           your apartment? View different artwork from various artists here. Download and purchase items you 
-          like. Make bids on popular work from major artists. <a href = "Buyer.html">Click Here</a>
-        </p1>
+          like. Make bids on popular work from major artists.</p> <a href = "Buyer.html">Click Here</a>
+        
+          
   </div>
-</a>
 
 
-  <a href="Seller.html">
+
+  <a href="Seller.html"></a>
   <div class="container homeCon bgimg3">
       <h2 class="h20">Sell & Auction</h2>
+      <p>Are you an artist looking to display your work? Need a place to show everyone your artistic talents?
+          Maybe you want to sell some of your masterpieces? Upload your work and become a seller today. You
+        might just make a lot money!</p>  <a href = "Seller.html">Click Here</a>
+
+      <div id="upload_widget_opener">
+          <!-- upload widget div -->
+        </div>
+          
+          <script type="text/javascript">  
+          
+          console.log("hello");  
+    
+            $('#upload_widget_opener').cloudinary_upload_widget(
+              { cloud_name: 'dujbxdubf', upload_preset: 'zwrhaeyd', 
+                cropping: 'server', folder: 'user_photos' },
+              function(error, result) { console.log(error, result) });
+          </script>
+
   </div>
-</a>
+
 
 
 
