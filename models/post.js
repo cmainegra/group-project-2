@@ -1,10 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
-    var Post = sequelize.define("Post", {
+    var Images = sequelize.define("Images", {
         img_url: {
             type: DataTypes.STRING,
             allowNull: false,
         }
     });
 
-    return Post;
+    return Images;
 };
