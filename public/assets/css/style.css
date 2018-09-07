@@ -1,115 +1,215 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  h1{
-      text-align: center;
-      color: mediumspringgreen;
-  }
+body {
+  /* Typography */
+  font-size: 18px;
+  line-height: 27px;
 
-  body {
-    /* Typography */
-    font-size: 18px;
-    line-height: 27px;
-  
-    /* Visual */
-    background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\CSS\Images\Multi.jpg);
-    background: url(../CSS/Images/Multi.jpg);  
-  }
-  
-  .wrapper {
-    /* Box-model */
-    width: 1024px;
-  
-    /* Positioning */
-    margin: 40px auto;
-  }
-  
-  #main-content,
-  #sidebar {
-    /* Box-model */
-    width: 500px;
-    padding: 30px;
-  }
-  
-  #main-content {
-    /* Positioning */
-    float: left;
-  
-    /* Visual */
-    background: #fff;
-  }
-  
-  #sidebar {
-    /* Positioning */
-    float: right;
-  
-    /* Visual */
-    background: #eee;
-  }
-  
-  @media screen and (max-width: 768px) {
-    body {
-      background-color: rgb(107, 74, 74);
-    }
-  
-    .wrapper {
-      /* Box-model */
-      width: 100%;
-      padding: 20px;
-    }
-  
-    #main-content,
-    #sidebar {
-      width: 100%;
-    }
-  
-    #sidebar {
-      margin-top: 40px;
-    }
-  }
-  
+  /* Visual */
+  background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\img\Multi.jpg);
+  background: url(../img/Multi.jpg);  
+}
 
-  @media screen and (max-width: 320px) {
-    body {
-      background-color: rgb(68, 69, 128);
-    }
-  
-    .wrapper {
-      /* Box-model */
-      width: 100%;
-      padding: 20px;
-    }
-  
-    #main-content,
-    #sidebar {
-      width: 100%;
-    }
-  
-    #sidebar {
-      margin-top: 40px;
-    }
-  }
-  
-  /* Width at 168px and below */
-  @media screen and (max-width: 168px) {
-    body {
-      background-color: rgb(117, 57, 109);
-    }
-  
-    .wrapper {
-      /* Box-model */
-      width: 100%;
-      padding: 20px;
-    }
-  
-    #main-content,
-    #sidebar {
-      width: 100%;
-    }
-  
-    #sidebar {
-      margin-top: 40px;
-    }
-  }
-  
+h1{
+  text-align: center;
+  font-family: "Comic Sans MS";
+  color: white;
+  font-size: 50px;
+}
+
+.p1{
+  color: aqua;
+}
+
+.fa:hover {
+  opacity: 0.2;
+}
+.fa{
+  float: right;
+  bottom: 0;
+  text-align: center;
+  margin-top: 5px 2px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+/* CSS for the containers on the HomePage */
+
+
+.position{
+    margin-left: 27%;
+}
+
+.homeCon {
+    float: left;  
+    width: 300px;
+    height: 300px;
+    border: 5px solid #fff;
+    margin: 8px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#third{
+    clear:left;
+}
+
+
+/* Images that go inside the div */
+
+h2{
+  color:white;
+}
+
+.h20{
+  color:white;
+}
+
+.bgimg1{
+  background-image: url('Timesheet.png');
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+
+}
+
+
+.bgimg2{
+  background-image: url('SpongeBob.png');
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+
+}
+
+
+.bgimg3{
+  background-image: url('got-wings.png');
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+}
+
+.bgimg4{
+  background-image: url('Guess.png');
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+
+}
+
+/* CSS for SideNav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+i,
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+i,
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+i,
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  background-color: #111B48;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+/* Gif background */
+.bg {
+
+  background: url('https://media2.giphy.com/media/wAVA7WdV2jita/giphy.gif');
+
+  /* Full height */ 
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* css for form */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+span {
+  color:white;
+}
+
+i {
+  color: black;
+}
