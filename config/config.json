@@ -6,7 +6,6 @@
         "port": 3306,
         "dialect": "mysql"
     },
-<<<<<<< HEAD
     "development": {
         "username": "root",
         "password": "groot",
@@ -20,14 +19,6 @@
         "password": "groot",
         "database": "pictures_db",
         "host": "127.0.0.1",
-=======
-    "Sushi": {
-
-        "username": "root",
-        "password": "Sushi-500",
-        "database": "pictures_db",
-        "host": "127.0.0.1",
->>>>>>> e6e933d32fa6ff7c5226b9454b5ba8fd649bb260
         "port": 3306,
         "dialect": "mysql"
     }
