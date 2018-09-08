@@ -34,12 +34,5 @@
         "database": "pictures_db",
         "port": 3306,
         "dialect": "mysql"
-    },
-    "Anthony": {
-        "username": "root",
-        "password": "root",
-        "database": "pictures_db",
-        "port": 3306,
-        "dialect": "mysql"
     }
-}
+   }
