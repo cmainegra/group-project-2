@@ -1,7 +1,7 @@
 {
     "Sushi": {
         "username": "root",
-        "password": "root",
+        "password": "Sushi-500",
         "database": "pictures_db",
         "port": 3306,
         "dialect": "mysql"
@@ -35,4 +35,4 @@
         "port": 3306,
         "dialect": "mysql"
     }
-}
+   }
