@@ -1,5 +1,5 @@
 {
-    "development": {
+    "Sushi": {
         "username": "root",
         "password": "Sushi-500",
         "database": "pictures_db",
@@ -7,10 +7,19 @@
         "port": 3306,
         "dialect": "mysql"
     },
-    "production": {
+    "development": {
         "username": "root",
-        "password": "charlie",
+        "password": "groot",
         "database": "pictures_db",
+        "host": "127.0.0.1",
+        "port": 3306,
+        "dialect": "mysql"
+    },
+    "Jairus": {
+        "username": "root",
+        "password": "groot",
+        "database": "pictures_db",
+        "host": "127.0.0.1",
         "port": 3306,
         "dialect": "mysql"
     }
