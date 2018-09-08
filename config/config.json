@@ -6,10 +6,12 @@
         "port": 3306,
         "dialect": "mysql"
     },
-    "charlie": {
+    "Sushi": {
+
         "username": "root",
-        "password": "charlie",
+        "password": "Sushi-500",
         "database": "pictures_db",
+        "host": "127.0.0.1",
         "port": 3306,
         "dialect": "mysql"
     }
