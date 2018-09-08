@@ -1,7 +1,21 @@
 {
     "Sushi": {
         "username": "root",
-        "password": "Sushi-500",
+        "password": "root",
+        "database": "pictures_db",
+        "port": 3306,
+        "dialect": "mysql"
+    },
+    "charlie": {
+        "username": "root",
+        "password": "charlie",
+        "database": "pictures_db",
+        "port": 3306,
+        "dialect": "mysql"
+    },
+    "Anthony": {
+        "username": "root",
+        "password": "root",
         "database": "pictures_db",
         "port": 3306,
         "dialect": "mysql"
@@ -18,7 +32,10 @@
         "username": "root",
         "password": "groot",
         "database": "pictures_db",
+<<<<<<< HEAD
         "host": "127.0.0.1",
+=======
+>>>>>>> 44f3bc84ffa36d83b49f976a68abe82b889c9997
         "port": 3306,
         "dialect": "mysql"
     }
