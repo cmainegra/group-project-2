@@ -1,14 +1,29 @@
 {
-    "development": {
+    "Sushi": {
         "username": "root",
         "password": "root",
         "database": "pictures_db",
         "port": 3306,
         "dialect": "mysql"
     },
-    "anthony": {
+    "Anthony": {
         "username": "root",
         "password": "root",
+        "database": "pictures_db",
+        "port: 3306,
+        "dialect": "mysql"
+    },
+    "development": {
+        "username": "root",
+        "password": "groot",
+        "database": "pictures_db",
+        "host": "127.0.0.1",
+        "port": 3306,
+        "dialect": "mysql"
+    },
+    "Jairus": {
+        "username": "root",
+        "password": "groot",
         "database": "pictures_db",
         "port": 3306,
         "dialect": "mysql"
