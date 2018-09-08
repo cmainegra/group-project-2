@@ -34,5 +34,5 @@
         "database": "pictures_db",
         "port": 3306,
         "dialect": "mysql"
-    },
+    }
 }
