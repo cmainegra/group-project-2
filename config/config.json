@@ -13,6 +13,13 @@
         "port": 3306,
         "dialect": "mysql"
     },
+    "Anthony": {
+        "username": "root",
+        "password": "root",
+        "database": "pictures_db",
+        "port: 3306,
+        "dialect": "mysql"
+    },
     "development": {
         "username": "root",
         "password": "groot",
@@ -25,7 +32,6 @@
         "username": "root",
         "password": "groot",
         "database": "pictures_db",
-        "host": "127.0.0.1",
         "port": 3306,
         "dialect": "mysql"
     },
