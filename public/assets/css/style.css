@@ -1,4 +1,4 @@
-body {
+.body1 {
   /* Typography */
   font-size: 18px;
   line-height: 27px;
@@ -7,6 +7,17 @@ body {
   background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\img\Multi.jpg);
   background: url(../img/Multi.jpg);  
 }
+
+.body2 {
+  background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\public\assets\img\buyart.jpg);
+  background: url(../img/buyart.jpg);
+}
+
+.body3{
+  background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\public\assets\img\Sellart.png);
+  background: url(../img/Sellart.png);
+}
+
 
 h1{
   text-align: center;
