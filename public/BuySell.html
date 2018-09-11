@@ -41,7 +41,7 @@
 
       </div>
 
-      <div class="container bgimg1">
+      <div class="container bgimg12">
       <h2 class="h20">Current Bids</h2> 
       <table class="table" id = "car-table">
           <tbody>
@@ -53,7 +53,7 @@
 </div>       
       </div>
 
-      <div class="container bgimg1">
+      <div class="container bgimg12">
       <h2 class="h20">Buyer</h2>     
 
       <form>
@@ -69,14 +69,48 @@
  
 
 
-    <script type="text/javascript">  
+<script type="text/javascript">  
           
       console.log("hello");  
 
   $('#upload_widget_opener').cloudinary_upload_widget(
               { cloud_name: 'dujbxdubf', upload_preset: 'zwrhaeyd', 
                 cropping: 'server', folder: 'user_photos' },
-              function(error, result) { console.log(error, result) });
+              //This function is waiting for the result from the cloudinary upload
+              //Asynchrinous function that runs after the result is recieved
+                function(error, result) { 
+                console.log(error, result)
+                //turns secure_url into a variable from the result
+                var img_url = result[0].secure_url;
+                //creates a post message to send to the server
+                $.ajax({
+                //sets the type of message
+                  type: 'POST',
+                //this URL should match the api route
+                  url:'/api/images',
+                //this is the payload (payload is whats inside the message body) 
+                  data: 
+                //turns payload into a JSON string
+                  JSON.stringify({
+                //image url from the result, must match to the route logic
+                    img_url: img_url
+                  }),
+                //runs after the response comes back from the server
+                  success: function(result){
+                   console.log(result);
+                  }
+                  ,
+                //setting headers for the message
+                  dataType: "json",
+                  contentType: "application/json"
+                });
+                return img_url;
+               });
+
+  
+
+               
+
 </script>
 
 
