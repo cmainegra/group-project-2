@@ -1,3 +1,6 @@
+body, html {
+  height: 100%;
+}
 .body1 {
   /* Typography */
   font-size: 18px;
@@ -16,8 +19,13 @@
 }
 
 .body3{
-  background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\public\assets\img\Sellart.png);
-  background: url(../img/Sellart.png);
+  background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\public\assets\img\other_art.png);
+  background: url(../img/other_art.jpg);
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
  /* Bordered form */
@@ -135,8 +143,8 @@ h1{
 
 .homeCon {
     float: left;  
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 700px;
     border: 5px solid #fff;
     margin: 8px;
     text-align: center;
@@ -158,14 +166,20 @@ h2{
   color:black;
 }
 
-.bgimg1{
-  width: 300px;
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 300px 200px;
+.bgimg1 {
+  display: inline-block;
+  width: 400px;
+  height: 500px;
   background-color: #fff;
+  border-radius: 15%;
+}
 
+.img_upload{
+margin-top: 50px;
+}
+.container  {
+  text-align: center;
+  margin-left: 25px;
 }
 
 
