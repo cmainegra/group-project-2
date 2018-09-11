@@ -15,4 +15,5 @@ db.sequelize.sync({ force: true }).then(function() {
         console.log("app listening on PORT:" + PORT )
     });
 });
+
 // app.get("/browse", function(req, res))
