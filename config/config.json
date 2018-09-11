@@ -32,11 +32,7 @@
         "username": "root",
         "password": "groot",
         "database": "pictures_db",
-<<<<<<< HEAD
         "host": "127.0.0.1",
-=======
->>>>>>> 44f3bc84ffa36d83b49f976a68abe82b889c9997
-        "port": 3306,
-        "dialect": "mysql"
+        "port": 3306
     }
-   }
+}
