@@ -5,7 +5,7 @@ module.exports = function(app) {
     app.get("/", function(req, res) {
         res.render("Index");
     });
-    app.get("/BuySell.html", function(req, res) {
+    app.get("/BuySell", function(req, res) {
         res.render("BuySell");
     });
     app.get("/Login.html", function(req, res) {

@@ -19,8 +19,8 @@ body, html {
 }
 
 .body3{
-  background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\public\assets\img\other_art.png);
-  background: url(../img/other_art.jpg);
+  background-image: url(C:\Users\susha\Desktop\Class_Stuff\Class_Projects\Project2\Code\group-project-2\public\assets\img\background003.png);
+  background: url(../img/background003.jpg);
   height: 100%;
 
   background-position: center;
@@ -163,6 +163,13 @@ h1{
 
 h2{
   color:black;
+}
+
+.H2{
+  color: white;
+  text-align: 'center';
+  font-size: 25px;
+
 }
 
 .h20{
