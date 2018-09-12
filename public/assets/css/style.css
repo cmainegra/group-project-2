@@ -99,6 +99,8 @@ span.psw {
       width: 100%;
   }
 } 
+
+/*Index html styles*/
 #holder1{
   background-color: #fff;
   align-content: center;
@@ -153,6 +155,7 @@ h1{
 
 #third{
     clear:left;
+    font-size: 80%;
 }
 
 
