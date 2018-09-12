@@ -6,5 +6,5 @@ module.exports = function(sequelize, DataTypes) {
         }
     });
 
-    return Images;
+    return Images
 };
