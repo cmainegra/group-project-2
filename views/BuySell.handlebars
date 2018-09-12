@@ -4,19 +4,114 @@
   <head>
     <meta charset="UTF-8">
     <title>Seller's Page</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+
+ 
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
 
   <body class = "body3">
 
-  <div class= "container">
-    <div id= "holder1">
-      <button id = "Sell.1">Sell</button>
-      <button id = "Price.1">Set Price</button>
-    </div>
 
-  </div>
+   
+
+
+      <div class="container bgimg12">
+      <h2 class="h20">Seller</h2>
+      
+          <!-- upload widget div -->
+      <div id="upload_widget_opener">
+      </div>
+
+      <!-- <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Example file input</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </form> -->
+
+      </div>
+
+      <div class="container bgimg12">
+      <h2 class="h20">Current Bids</h2> 
+      <table class="table" id = "car-table">
+          <tbody>
+            <tr>
+              <th scope= "col"></th>
+            </tr>
+          </tbody>
+        </table>
+</div>       
+      </div>
+
+      <div class="container bgimg12">
+      <h2 class="h20">Buyer</h2>     
+
+      <form>
+          <div class="form-group">
+            <label for="bid-input">Enter Bid</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+       
+      </div>
+
+ 
+
+
+<script type="text/javascript">  
+          
+      console.log("hello");  
+
+  $('#upload_widget_opener').cloudinary_upload_widget(
+              { cloud_name: 'dujbxdubf', upload_preset: 'zwrhaeyd', 
+                cropping: 'server', folder: 'user_photos' },
+              //This function is waiting for the result from the cloudinary upload
+              //Asynchrinous function that runs after the result is recieved
+                function(error, result) { 
+                console.log(error, result)
+                //turns secure_url into a variable from the result
+                var img_url = result[0].secure_url;
+                //creates a post message to send to the server
+                $.ajax({
+                //sets the type of message
+                  type: 'POST',
+                //this URL should match the api route
+                  url:'/api/images',
+                //this is the payload (payload is whats inside the message body) 
+                  data: 
+                //turns payload into a JSON string
+                  JSON.stringify({
+                //image url from the result, must match to the route logic
+                    img_url: img_url
+                  }),
+                //runs after the response comes back from the server
+                  success: function(result){
+                   console.log(result);
+                  }
+                  ,
+                //setting headers for the message
+                  dataType: "json",
+                  contentType: "application/json"
+                });
+                return img_url;
+               });
+
+  
+
+               
+
+</script>
 
 
   </body>
