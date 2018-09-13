@@ -51,7 +51,7 @@
 <body class = "body3">
 
 <div class= "container5">
-<img>{{{ container }}}</img>
+<img src="{{ img_url }}"></img>
 </div>
    
 
@@ -96,6 +96,7 @@
                 //runs after the response comes back from the server
                   success: function(result){
                    console.log(result);
+                   console.log(img_url);
                   }
                   ,
                 //setting headers for the message

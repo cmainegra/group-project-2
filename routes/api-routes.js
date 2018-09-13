@@ -2,12 +2,12 @@ var db = require("../models");
 
 module.exports = function(app) {
     app.get("api/buyers/", function(req, res) {
-        db.Images.FindAll({}).then(function(result) {
+        db.Images.findAll({}).then(function(result) {
             res.json(result);
         });
     });
     app.get("/api/sellers/:id", function(req, res) {
-        db.Images.FindOne({
+        db.Images.findOne({
             where: {
                 id: req.params.id
             }
