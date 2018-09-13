@@ -16,7 +16,7 @@ module.exports = function(app) {
             res.json(dbImage)
         });
     });
-    app.post("api/images/", function(req, res) {
+    app.post("/api/images/", function(req, res) {
         var image = req.body.img_url;
         db.Images.create({
             img_url: image
