@@ -1,61 +1,88 @@
-         
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD44-5xziGOFu8ItvupicDBYzg863Vx3hQ",
-    authDomain: "art-bidding.firebaseapp.com",
-    databaseURL: "https://art-bidding.firebaseio.com",
-    projectId: "art-bidding",
-    storageBucket: "art-bidding.appspot.com",
-    messagingSenderId: "501306330125"
-  };
-  firebase.initializeApp(config);
+var config = {
+  apiKey: "AIzaSyCVtrj9jB44_VqXfkCwsExE9e_H_V4Gv4M",
+  authDomain: "flying-car-bbcab.firebaseapp.com",
+  databaseURL: "https://flying-car-bbcab.firebaseio.com",
+  projectId: "flying-car-bbcab",
+  storageBucket: "",
+  messagingSenderId: "214791519023"
+};
 
-  var database = firebase.database();
+firebase.initializeApp(config);
+
+var database = firebase.database();
 
 
-  $('#upload_widget_opener').cloudinary_upload_widget(
-    { cloud_name: 'dujbxdubf', upload_preset: 'zwrhaeyd', 
-      cropping: 'server', folder: 'user_photos' },
-    function(error, result) { console.log(error, result) });
-
-$("#current-bid").on("click", function(event){
+$("#add-car-button").on("click", function(event){
   event.preventDefault();
 
-  var bidPrice = $("#bid-input").val().trim();
 
-  var newBid = {
-    bid:bidPrice
-  };
 
-  database.ref().push(newBid);
+  var carName = $("#carName-input").val().trim();
+  var carDestination = $("#destination-input").val().trim();
+  var carFreq = $("#frequency-input").val().trim();
 
-  console.log(newBid.bidPrice);
+var newCarTime = {
+    name: carName,
+    destination: carDestination,
+    frequency: carFreq,
 
-  $("#bid-input").val("");
+};
+
+database.ref().push(newCarTime);
+
+
+  alert("Bid Recieved");
+
+  $("#carName-input").val("");
+  $("#destination-input").val("");
+  $("#frequency-input").val("");
+  $("#arrival-input").val("");
 
 });
 
 database.ref().on("child_added", function(childSnapshot){
-  console.log(childSnapshot.val());
 
-  var bidPrice = childSnapshot.val().bid;
 
-  console.log(bidPrice);
+    var carName = childSnapshot.val().name;
+    var destination = childSnapshot.val().destination;
+    var freq = childSnapshot.val().frequency;
 
-  var newRow = $("<tr>").append(
-      $("<td>").text(bidPrice),
-    );
+ 
 
-    $('#bid-table > tbody').append(newRow);
+    var newRow = $("<tr>").append(
+        $("<td>").text(carName),
+        $("<td>").text(destination),
+        $("<td>").text(freq),
+      );
 
-    //Calculating the times of the Flying Cars
 
+
+    $('#car-table > tbody').append(newRow);
+
+    
     var cFrequency = 5;
 
     //Time is 12:00 AM
     var firstTime = "12:00";
 
+    
     var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
-    console.log(firstTimeConverted);
+
+
+    var currentTime = moment();
+  
+    
+    var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+    
+
+    // Time apart (remainder)
+    var cRemainder = diffTime % cFrequency;
+   
+
+     // Minute Until Train
+     var carAway = cFrequency - cRemainder;
+    
     
 });
+
+    
