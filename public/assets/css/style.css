@@ -16,6 +16,7 @@ body, html {
   background: url(../img/buyart.jpg);
   background-repeat: no-repeat;
   background-size: stretch;
+  text-align: center;
 }
 
 .body3{
@@ -25,12 +26,13 @@ body, html {
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: stretch;
 }
 
  /* Bordered form */
  form {
-  border: 3px solid #f1f1f1;
+  border: 3px #f1f1f1;
+  display: inline-block;
 }
 
 /* Full-width inputs */
@@ -70,18 +72,20 @@ button:hover {
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
+  display: inline-block;
+  padding-left: 10%;
 }
 
 /* Avatar image */
 img.avatar {
   width: 40%;
   border-radius: 50%;
-}
+  }
 
 /* Add padding to containers */
 .container {
   padding: 16px;
-}
+  }
 
 /* The "Forgot password" text */
 span.psw {
