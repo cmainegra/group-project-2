@@ -16,7 +16,7 @@ db.sequelize.sync({ force: true }).then(function() {
         console.log("app listening on PORT:" + PORT )
     });
 });
-
+require("./routes/api-routes.js")(app);
 
 
 // app.get("/browse", function(req, res))
